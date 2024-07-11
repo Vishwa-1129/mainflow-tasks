@@ -1,0 +1,41 @@
+1.DATABASE:
+        A database is an organized collection of data ,generally stored and accessed electronically from a computer system.
+Databases are structured to facilitate the storage,retrieval,modification,and deletion of data in conjuction with various
+data-processing operations.
+2.SQL Basics:
+        SQL stands for structured query language,access and manipulate databases
+ 
+SQL can do?
+        execute queries 
+        retrieve data
+        insert records
+        update records
+        .....
+Basic Elements:
+        a.Literals-fixed data value .....ex:-"Raunak",'8'
+        b.Data Types-ex:-char or varchar ,numeric int,smallint,date and time-date,datetime(yyyy-mm-dd-1973-12-30),string-char and varchar
+        c.Nulls-empty value in column
+        d.comments-text that is not executed - /*...............*/,--......,#hi my name
+
+3.Syntax:-
+        a.select:-
+             select name,owner
+             from pet;
+             select* from pet;
+             select distinct name
+             from pet;
+             select all name
+             from pet;
+DDL Commands:-defining,redifing,modifying,dropping various database objects 
+a.create:-
+             create table student;
+b.alter:-
+             alter table student
+             add(name varchar(25));
+             alter table student
+             modify(age number(9,2));
+             alter table student
+             drop name;
+c.Drop:-
+             drop table student;
+        
