@@ -1,0 +1,8 @@
+﻿SQL Developer
+TASK-2
+Description: SQL aggregate functions perform a calculation on a set of values and return single value. They are often used with the GROUP BY clause to group rows that share a property, allowing for more complex data analysis. Common SQL aggregate functions include:
+SUM(): Adds up all the values in a specified column.
+AVG(): Calculates the average of the values in a specified column.
+COUNT(): Counts the number of rows that match a specified condition.
+MAX(): Finds the maximum value in a specified column.
+MIN(): Finds the minimum value in a specified column.
