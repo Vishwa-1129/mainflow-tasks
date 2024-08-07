@@ -1,0 +1,67 @@
+SQL constraints are rules applied to columns in a table to ensure the accuracy and reliability of the data in the database. Here are the main types of SQL constraints:
+
+NOT NULL: Ensures that a column cannot have a NULL value.
+
+Syntax:
+
+CREATE TABLE users (
+    user_id INT,
+    username VARCHAR(255) NOT NULL
+);
+UNIQUE: Ensures that all the values in a column are unique.
+
+Syntax:
+
+CREATE TABLE users (
+    user_id INT,
+    email VARCHAR(255) UNIQUE
+);
+PRIMARY KEY: Uniquely identifies each record in a table. A table can have only one primary key, which can consist of one or more columns.
+
+Syntax:
+
+CREATE TABLE users (
+    user_id INT PRIMARY KEY,
+    email VARCHAR(255) UNIQUE
+);
+FOREIGN KEY: Ensures the referential integrity of the data in one table to match values in another table.
+
+Systax:
+
+CREATE TABLE orders (
+    order_id INT PRIMARY KEY,
+    user_id INT,
+    FOREIGN KEY (user_id) REFERENCES users(user_id)
+);
+CHECK: Ensures that all values in a column satisfy a specific condition.
+
+Syntax:
+
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    salary DECIMAL(10, 2),
+    CHECK (salary > 0)
+);
+DEFAULT: Sets a default value for a column when no value is specified.
+
+Syntax:
+
+CREATE TABLE products (
+    product_id INT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+INDEX: Improves the speed of data retrieval operations on a database table.
+
+Syntax:
+
+CREATE INDEX idx_username ON users(username);
+
+Constraints are crucial for maintaining data integrity and enforcing business rules within the database. 
+They can be defined when creating a table or added to an existing table using the ALTER TABLE statement.
+
+
+
+
+
+
